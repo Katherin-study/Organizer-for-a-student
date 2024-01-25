@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+*{
+    font-family: "Montserrat";
+    text-align: center;
+    color:#04215A;
+}
+body{
+    background: url('../img/back_2.png') 0 0/cover no-repeat;
+}
+#quest1, #quest2, #quest3, #quest4{
+    margin-top: 10%;
+    padding: 20px;
+    background-color: #FFFFF7;
+    border: 1.5px solid #04215A;
+    border-radius: 27px;
+    font-weight:400;
+    font-size: 27px;
+    display: inline-block;
+    max-width: 400px;
+    display:none;
+}
+#quest1{
+    display:inline-block;
+}
+.select_day div{
+    padding: 2px;
+    padding-left:20%;
+    font-size: 15px;
+    font-weight:300;
+    text-align: left;
+}
+button{
+    font-size:18px;
+    margin-top: 5%;
+    padding: 7px 15px;
+    background-color: #FFFFF7;
+    border: 1.5px solid #04215A;
+    border-radius: 18px;
+    display: inline-block;
+    box-shadow: 0 0 2px #122b5c;
+}
+input, option, select{
+    border: 1px solid #04215A;
+    border-radius: 12px;
+    padding: 2px;
+}
+option, select{
+    font-size: 15px;
+    padding: 3px;
+}

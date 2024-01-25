@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="..//css/register.css">
+    <link rel="stylesheet" href="..//css/nullstyle.css">
+</head>
+<body>
+    <div id="login">
+        <p>Вход</p>
+        <form method="post" onsubmit="EnterBtn()">
+            <div> <input type="text" placeholder="логин" name="login" id="login_enter" required> </div>
+            <div><input type="password" placeholder="пароль" name="pass" id="pass_enter" required> </div>
+            <button id="enter_btn"> Войти</button>
+            <div onclick="Register()" class="register_btn"> Нет аккаунта? <div> Зарегистрироваться </div> </div>
+        </form>
+    </div>
+    <div id="register">
+        <p>Регистрация</p>
+        <form method="post" onsubmit="RegisterBtn()">
+            <div> <input type="text" placeholder="логин" name="login" id="login_reg" required></div>
+            <div> <input type="password" placeholder="пароль" name="pass" id="pass_reg" required></div> 
+            <div> <input type="password" placeholder="повтор пароля" name="repeatpass" id="repeatpass_reg" required> </div>
+            <div> <input type="text" placeholder="email" name="email" id="email_reg" required></div>
+            <button id="register_btn"> Зарегистрироваться </button>
+        </form>
+    </div>
+    <script src="..//js/register.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter</title>
+    <link rel="stylesheet" href="..//css/create.css">
+    <link rel="stylesheet" href="..//css/nullstyle.css">
+    </head>
+<body>
+    <div id="heading"> Создай макет планера </div>
+        <div id="question_2">
+            <form id="interval" onsubmit="return NextButton2()" method="post">
+                <p>С какой точностью ты строишь планы?</p>
+                <div class="interval">
+                    <label><input required type="radio" name="interval" value="60" id="int1"/>1час</label>
+                    <label><input required type="radio" name="interval" value="30" id="int2"/>30мин</label>
+                    <label><input required type="radio" name="interval" value="15" id="int3"/>15мин</label>
+                </div>
+                <button type ="submit" id="next">
+                    Далее
+                </button>
+            </form>
+        </div>
+        <div id="question_1">
+            <form id="range" onsubmit="return NextButton1()" method="post">
+                <p>В какие часы ты бодрствуешь?</p>
+                <div class="range">
+                    <input required type="number" min="0" value="9" max="23" step="1" id="time_range_up_h">
+                    :
+                    <input type="number" min="0" value="00" max="59" step="15" id="time_range_up_m">
+                    - 
+                    <input required type="number" min="0" value="23" max="23" step="1" id="time_range_down_h">
+                    :
+                    <input type="number" min="0" value="00" max="59" step="15" id="time_range_down_m">
+                </div>
+                <button type ="submit" id="next">
+                    Далее
+                </button>
+            </form>
+        </div>
+        <div id="question_3">
+            <form id="category" onsubmit="return Done()" method="post">
+                <p>Определи категории планирования</p>
+                <div class="category">
+                <div id="cat_1">
+                    <label>Название:  <input type="text" id="cat_name_1"></label>
+                    <label>Цвет блока:<input required type="color" id="cat_color_1"/></label>
+                </div>
+                <div id="cat_2">
+                    <label>Название:  <input type="text" id="cat_name_2"></label>
+                    <label>Цвет блока:<input required type="color" id="cat_color_2"/></label>
+                </div>
+                <div id="cat_3">
+                    <label>Название:  <input type="text" id="cat_name_3"></label>
+                    <label>Цвет блока:<input required type="color" id="cat_color_3"/></label>
+                </div>
+                <div id="cat_4">
+                    <label>Название:  <input type="text" id="cat_name_4"></label>
+                    <label>Цвет блока:<input required type="color" id="cat_color_4"/></label>
+                </div>
+                <div id="cat_5">
+                    <label>Название:  <input type="text" id="cat_name_5"></label>
+                    <label>Цвет блока:<input required type="color" id="cat_color_5"/></label>
+                </div>
+                <div class="add_cat" id="add_cat">
+                    Добавить категорию <span onclick="AddCategory()" id="add_cat"> + </span>
+                </div>
+                <button type ="submit" id="next">
+                    Готово
+                </button>
+            </form>
+        </div>
+        <script src="..//js/create.js">
+        </script>
+</body>
+</html>

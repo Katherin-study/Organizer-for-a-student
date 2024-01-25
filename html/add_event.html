@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add_event</title>
+    <link rel="stylesheet" href="..//css/add_event.css">
+    <link rel="stylesheet" href="..//css/nullstyle.css">
+</head>
+<body>
+    <div id="quest1">
+        <p>Выбери день</p>
+        <form id="day" onsubmit="return NextButton1()" method="post">
+            <div class="select_day">
+                <div>
+                    <input required type="radio" name="day" value="Monday" id="select_day_1"/>
+                    <label for="select_day_1">Понедельник</label>
+                </div>
+                <div>
+                    <input required type="radio" name="day" value="Tuesday" id="select_day_2"/>
+                    <label for="select_day_2">Вторник</label>
+                </div>
+                <div>
+                    <input required type="radio" name="day" value="Wednesday" id="select_day_3"/>
+                    <label for="select_day_3">Среда</label>
+                </div>
+                <div>
+                    <input required type="radio" name="day" value="Thursday" id="select_day_4"/>
+                    <label for="select_day_4">Четверг</label>
+                </div>
+                <div>
+                    <input required type="radio" name="day" value="Friday" id="select_day_5"/>
+                    <label for="select_day_5">Пятница</label>
+                </div>
+                <div>
+                    <input required type="radio" name="day" value="Saturday" id="select_day_6"/>
+                    <label for="select_day_6">Суббота</label>
+                </div>
+                <div>
+                    <input required type="radio" name="day" value="Sunday" id="select_day_7"/>
+                    <label for="select_day_7">Воскресенье</label>
+                </div>
+            </div>
+            <button type ="submit" id="next">
+                Далее
+            </button>
+        </form>
+    </div>
+    <div id="quest2">
+        <p>Выбери категорию</p>
+        <form id="category" onsubmit="return NextButton2()" method="post">
+            <select class="select_cat" id="select_cat">
+            </select>
+            <br>
+            <button type ="submit" id="next">
+                Далее
+            </button>
+        </form>
+    </div>
+    <div id="quest3">
+        <p>Дай название событию</p>
+        <form id="name_cat" onsubmit="return NextButton3()" method="post"><div>
+            <input required type="text" id="name">
+        </div>
+        <button type ="submit" id="next">
+            Далее
+        </button>
+        </form>
+    </div>
+    <div id="quest4">
+        <p>Выбери временной диапазон</p>
+        <form id="event_time" method="post" onsubmit="return SendData()">
+            <div>
+            <input required type="number" min="0" value="9" max="23" step="1" id="time_range_up_h">
+                    :
+                    <input type="number" min="0" value="0" max="59" step="15" id="time_range_up_m">
+                    - 
+                    <input required type="number" min="0" value="23" max="23" step="1" id="time_range_down_h">
+                    :
+                    <input type="number" min="0" value="0" max="59" step="15" id="time_range_down_m">
+            </div>
+            <button type ="submit" id="done">
+                Готово
+            </button>
+        </form>
+    </div>
+    <script src="..//js/add_event.js"></script>
+</body>
+</html>

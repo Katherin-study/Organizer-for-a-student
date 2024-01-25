@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+*{
+    font-family: "Montserrat";
+    text-align: center;
+    color:#04215A;
+}
+body{
+    background: url('../img/back_2.png') 0 0/cover no-repeat;
+    max-height: 350px;
+}
+#question_1, #question_2, #question_3{
+    margin-top: 3%;
+    padding: 20px;
+    background-color: #FFFFF7;
+    border: 1.5px solid #04215A;
+    border-radius: 27px;
+    font-weight:400;
+    font-size: 20px;
+    display: inline-block;
+    max-width: 400px;
+}
+.interval label{
+    font-size: 20px;
+    font-weight:300;
+    padding:30px 10px;
+    margin-left: 5px; 
+}
+.category div{
+    font-weight:300;
+    font-size:18px;
+}
+#cat_name_1, #cat_name_2, #cat_name_3 ,#cat_name_4, #cat_name_5{
+    width:60px;
+    border: 1px solid #1b305c;
+    margin: 7px;
+}
+#cat_color_1, #cat_color_2, #cat_color_3, #cat_color_4, #cat_color_5{
+    margin: 7px;
+}
+#cat_3, #cat_4, #cat_5{
+    display:none;
+}
+#add_cat{
+    margin-top: 5px;
+    font-size: 15px;
+}
+span{
+    padding:0 5px;
+    border-radius: 50%;
+    border: 1px solid #04215A;
+    margin-left: 7px;
+    cursor:pointer;
+}
+#heading{
+    margin-top: 11%;
+    font-weight:500;
+    font-size: 45px;
+}
+button{
+    font-size:18px;
+    margin-top: 5%;
+    padding: 7px 15px;
+    background-color: #FFFFF7;
+    border: 1.5px solid #04215A;
+    border-radius: 18px;
+    display: inline-block;
+    box-shadow: 0 0 2px #122b5c;
+}
+#question_2, #question_3{
+    display:none;
+}
+input{
+    border: 1px solid #04215A;
+    border-radius: 12px;
+    padding: 2px;
+    margin-top:10px;
+}
